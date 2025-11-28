@@ -36,7 +36,7 @@
 
 ---
 
-### 🏗️ 2. Architecture Overview  
+### 🏗️ Architecture Overview  
 
 ![architecture](https://github.com/user-attachments/assets/f08e9a50-bd21-4ef0-9407-c7083aaf78d7)
 
