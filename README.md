@@ -54,7 +54,7 @@
 ### 1. Environment Setup
 ```bash
 # 1. Repository Clone
-git clone [https://github.com/ha789ha/samsung_ai_challenge.git](https://github.com/ha789ha/samsung_ai_challenge.git)
+git clone https://github.com/ha789ha/samsung_ai_challenge.git
 cd samsung_ai_challenge
 
 # 2. Conda Environment Setup
