@@ -50,3 +50,44 @@
 - **Env:** NVIDIA T4  
 
 ---
+## 코드 실행
+### 1. Environment Setup
+```bash
+# 1. Repository Clone
+git clone [https://github.com/ha789ha/samsung_ai_challenge.git](https://github.com/ha789ha/samsung_ai_challenge.git)
+cd samsung_ai_challenge
+
+# 2. Conda Environment Setup
+conda create -n samsung python=3.10
+conda activate samsung
+
+# 3. Install Dependencies
+pip install -r requirements.txt
+```
+### 2. Data & Model Preparation
+- **Data (Test Images & CSV)**: [Dacon Data Download](https://dacon.io/competitions/official/236630/data)  
+- **Detection Model**: [DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOL) (`doclayout_yolo_docstructbench_imgsz1280_2501.pt`)  
+- **OCR Model**: (PaddleOCR Model)[https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det']  
+  - Detection: `PP-OCRv5_server_det`  
+  - Recognition: `korean_PP-OCRv5_mobile_rec`  
+ 
+#### 📂 Directory Structure
+```bash
+samsung_ai_challenge/
+├── data/
+│ ├── test.csv
+│ └── (images...) # Test 이미지 파일 위치
+├── model/
+│ ├── doclayout_yolo_docstructbench_imgsz1280_2501.pt
+│ ├── PP-OCRv5_server_det/ # 압축 해제된 폴더
+│ └── korean_PP-OCRv5_mobile_rec/ # 압축 해제된 폴더
+├── output/ # 결과 저장 폴더
+├── config.py
+└── main.py # 실행 파일
+```
+### 3. Inference
+```bash
+python script.py
+```
+
+---
