@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ```
 ### 2. Data & Model Preparation
 - **Data (Test Images & CSV)**: [Dacon Data Download](https://dacon.io/competitions/official/236630/data)  
-- **Detection Model**: [DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOL) (`doclayout_yolo_docstructbench_imgsz1280_2501.pt`)  
+- **Detection Model**: [DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOLO) (`doclayout_yolo_docstructbench_imgsz1280_2501.pt`)  
 - **OCR Model**: (PaddleOCR Model)[https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det']  
   - Detection: `PP-OCRv5_server_det`  
   - Recognition: `korean_PP-OCRv5_mobile_rec`  
